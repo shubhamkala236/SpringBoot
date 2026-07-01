@@ -33,5 +33,5 @@ public class AIController {
     }
 
     public record ChatRequestDto(String message) {}
-    public record ChatResponseDto(String reply) {}
+    public record ChatResponseDto(String reply ) {}
 }
