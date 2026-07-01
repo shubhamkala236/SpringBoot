@@ -4,9 +4,9 @@ spring:
   ai:
     ollama:
       base-url: http://localhost:11434
-      chat:
-        options:
-          model: llama3.2
       init:
         timeout: 60s
         max-retries: 1
+      chat:
+        options:
+          model: llama3.2
