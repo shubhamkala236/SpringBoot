@@ -21,7 +21,7 @@ import java.util.List;
 public class SecurityConfig {
 
     @Autowired
-    private UserDetailsPasswordService userDetailsPasswordService;
+    private UserDetailsService userDetailsService;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http)
@@ -39,7 +39,7 @@ public class SecurityConfig {
 //    {
 //        DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
 //
-//        provider.setUserDetailsPasswordService(userDetailsPasswordService);
+//        provider.setUserDetailsService(userDetailsService);
 //        provider.setPasswordEncoder(NoOpPasswordEncoder.getInstance());
 //
 //        return provider;
